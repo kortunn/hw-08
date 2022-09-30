@@ -8,13 +8,31 @@
     margin-bottom: 30px;
 }
 .info-list{
-    display: flex;
-    gap: 30px;
     
+    
+    margin-bottom: -30px;
+    @media screen and (min-width: 768.98px){
+        @include list(null, wrap, 30px);
+    }
+    @media screen and (min-width: 1200px){
+        @include list(null, nowrap, 30px);
+    }
+}
+.list-item{
+    margin-bottom: 30px;
+    width: 100%;
+    @media screen and (min-width: 768.98px){
+        @include item(1, 2, 30px);
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px){
+        @include item(3, 4, 30px);
+    }
 }
 
 
 .subtitle{
+    text-align: center;
     margin-bottom: 10px;
     font-family: var(--main-font);
     font-weight: 700;
@@ -24,6 +42,9 @@
     text-transform: uppercase;
 
     color: var(--main-txt-cl);
+    @media screen and (min-width: 768.98px){
+        text-align: start;
+    }
 }
 .text{
     font-family: var(--main-font);

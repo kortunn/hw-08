@@ -1,0 +1,24 @@
+@mixin transition($one, $two, $three, $time, $function) {
+     transition-property: $one, $two, $three;
+     transition-duration: $time;
+     transition-timing-function: $function;
+    }
+ @mixin item( $q-gap, $q-item, $gap) {
+ flex-basis: calc((100% - #{$q-gap} * #{$gap}) / $q-item);
+ }
+ @mixin list($fd, $wrap, $gap) {
+    display: flex;
+    flex-direction: $fd;
+    flex-wrap: $wrap;
+    gap:$gap;
+}  
+@mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
+    font-family: $ff;
+   font-size: $fs;
+   font-weight: $fw;
+   line-height: $lh;
+    letter-spacing: $ls;
+    color: $fc;
+    }
+    
+    
