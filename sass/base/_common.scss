@@ -1,0 +1,47 @@
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+address{
+    margin-top: 20px;
+}
+.page{
+color: var(--main-txt-cl);
+text-decoration: none;
+font-family: var(--main-font);
+font-size: 14px;
+}
+.accent{
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--accent-txt-cl);
+}
+.link{
+    text-decoration: none;
+    color: currentColor;
+    
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
