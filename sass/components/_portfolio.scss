@@ -1,9 +1,10 @@
 .btn-list{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
-   
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .btn-list__item{
     padding-top: 6px;
@@ -22,6 +23,7 @@
     letter-spacing: 0.03em;
     cursor: pointer;
     color: var(--main-txt-cl);
+   
 }
 .btn-list__item:hover,
 .btn-list__item:focus{
@@ -30,14 +32,36 @@
     color: var(--white-tx-cl);
 }
   .cards{
-    justify-content: center;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 34px;
+    @media screen and (min-width: 768.98px){
+        @include list(row, wrap, 30px);
+        
+      
+    }
+    @media screen and (min-width: 1200px){
+        @include list(null, wrap, 30px);
+        justify-content: center;
+        
+    }
   }
 .cards-item{
     width: 370px;
+    @media screen and (min-width: 768.98px){
+        
+        @include item(1, 2, 30px);
+        margin-bottom: 0;
+      
+       
+    }
+    @media screen and (min-width: 1200px){
+        @include item(2, 3, 30px);
+        width: 370px;
+    }
     
 }
 .portfolio-container{

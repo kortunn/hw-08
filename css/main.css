@@ -608,9 +608,10 @@ label {
 
 .btn-list {
   display: flex;
-  justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .btn-list__item {
@@ -642,15 +643,44 @@ label {
 }
 
 .cards {
-  justify-content: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 34px;
 }
+@media screen and (min-width: 768.98px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
 
 .cards-item {
   width: 370px;
+}
+@media screen and (min-width: 768.98px) {
+  .cards-item {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    width: 370px;
+  }
 }
 
 .portfolio-container {
@@ -730,12 +760,6 @@ label {
   margin-bottom: 10px;
 }
 
-.team__item {
-  background-color: var(--white-tx-cl);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
 .social__item {
   width: 44px;
   height: 44px;
@@ -791,6 +815,45 @@ label {
 .icon {
   width: 20px;
   fill: #AFB1B8;
+}
+
+.team__item {
+  width: 100%;
+  background-color: var(--white-tx-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768.98px) {
+  .team__item {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+}
+
+.team__list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768.98px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 
 footer {

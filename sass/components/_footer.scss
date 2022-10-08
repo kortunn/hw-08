@@ -55,11 +55,12 @@ footer{
     .footer-social__list{
         display: flex;
         gap: 10px;
+       
     }
+    
     .footer-container{
         display: flex;
         align-items: baseline;
-    
     }
     .footer-social{
         margin-left: 70px;
@@ -75,9 +76,10 @@ footer{
         margin-bottom: 20px;
     }
     .footer-social__item{
-        
         width: 44px;
         height: 44px;
+        
+        
     }
     .footer-social__link{
         width: 100%;
