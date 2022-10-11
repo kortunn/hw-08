@@ -5,6 +5,11 @@
     margin-bottom: 50px;
     flex-direction: row;
     flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        
+       
+    }
   }
   .btn-list__item{
     padding-top: 6px;

@@ -17,6 +17,10 @@
     letter-spacing: 0.03em;
     
     color: var(--main-txt-cl);
+    @media screen and (max-width: 767px){
+        margin-right: auto;
+        
+    }
 }
 
 
@@ -27,6 +31,10 @@
 .nav{
     display: flex;
     margin-right: auto;
+    @media screen and (max-width: 767px){
+        display: none;
+        
+    }
    
 }
 .header__list{
@@ -37,6 +45,19 @@
 }
 .contact-list{
     display: flex;
+    @media screen and (max-width: 767px){
+        display: none;
+        
+    }
+    @media screen and (max-width: 1199px){
+     
+        
+        margin-left: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
     
 }
 
@@ -84,6 +105,11 @@
     font-weight: 500;
     transition-duration: 250ms;
   transition-timing-function: var(--timing-funcion);
+  @media screen and (max-width: 1199px){
+     padding: 0;
+     margin-left: 96px;
+    }
+  
  }
  .header-contact:hover svg,
   .header-contact:focus svg{
@@ -98,4 +124,25 @@
 }
 .list-item-mail{
     margin-right: 50px;
+}
+.header__menu{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 2;
+   
+}
+.header__menu .close{
+    opacity: 0;
+}
+.header__menu.is-open .close{
+     opacity: 1;
+}
+.header__menu.is-open .open{
+    opacity: 0;
+}
+.mobile-logo{
+    @media screen and (min-width: 767px){
+        display: none;
+    }
 }

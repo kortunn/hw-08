@@ -6,8 +6,9 @@
 background: var(--background-page);
 padding-bottom: 200px;
 padding-top: 200px;
-background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-url(../images/hero/Img\ \(9\).png);
+// background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+// url(../images/hero/Img\ \(9\).png);
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/bgi-hero/bgi-hero-768@2x.jpg);
 
 background-position: center;
 background-repeat: no-repeat;
@@ -16,7 +17,9 @@ max-width: 1600px;
 
 margin-right: auto;
 margin-left: auto;
+
 }
+
 .hero__btn{
 width: 216px;
 min-height: 50px;

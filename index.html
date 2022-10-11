@@ -20,6 +20,7 @@
 	<body class="page">
 		<header class="header">
 			<div class="container header__container">
+				<a class="logo mobile-logo" href=""><span class="accent">Web</span>Studio</a>
 				<nav class="nav">
 					<a class="logo" href=""><span class="accent">Web</span>Studio</a>
 
@@ -105,24 +106,43 @@
 					<ul class="list img__list">
 						<li class="list-item">
 							<div class="thumb">
-								<img src="./images/box1.png" alt="Человек пишет код " width="370" height="294" />
+								<picture>
+									<source
+										srcset="./images/box/box-1-370.webp 1x, ./images/box/box-1-370@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source srcset="./images/box/box-1-370.jpg 1x, ./images/box/box-1-370@2x.jpg 2x" type="image/jpeg" />
+									<img src="./images/box/box-1-370.jpg" alt="Валідна розмітка" />
+								</picture>
+
 								<p class="label">Десктопні додатки</p>
 							</div>
 						</li>
 						<li class="list-item">
 							<div class="thumb">
-								<img
-									src="./images/box2.png"
-									alt="Человек работает с телефоном перед компьютером"
-									width="370"
-									height="294"
-								/>
+								<picture>
+									<source
+										srcset="./images/box/box-2-370.webp 1x, ./images/box/box-2-370@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source srcset="./images/box/box-2-370.jpg 1x, ./images/box/box-2-370@2x.jpg 2x" type="image/jpeg" />
+									<img src="./images/box/box-2-370.jpg" alt="Стилізація" />
+								</picture>
+
 								<p class="label">Мобільні додатки</p>
 							</div>
 						</li>
 						<li class="list-item">
 							<div class="thumb">
-								<img src="./images/box3.png" alt="Дезайнерские делишки на планшете" width="370" height="294" />
+								<picture>
+									<source
+										srcset="./images/box/box-3-370.webp 1x, ./images/box/box-3-370@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source srcset="./images/box/box-3-370.jpg 1x, ./images/box/box-3-370@2x.jpg 2x" type="image/jpeg" />
+									<img src="./images/box/box-3-370.jpg" alt="Дизайн" />
+								</picture>
+
 								<p class="label">Дизайнерські рішення</p>
 							</div>
 						</li>
@@ -134,13 +154,25 @@
 					<h2 class="subject">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__item">
-							<img
-								class="team__picture"
-								src="./images/img.jpg"
-								alt="Гарне фото Ігоря Дем'яненко"
-								width="270"
-								height="260"
-							/>
+							<picture>
+								<source
+									srcset="./images/team/person-1/person-1-270.jpg 1x, ./images/team/person-1/person-1-270@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/person-1/person-1-354.jpg 1x, ./images/team/person-1/person-1-354@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/person-1/person-1-450.jpg 1x, ./images/team/person-1/person-1-450@2x.jpg 2x"
+									type="image/jpeg"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/team/person-1/person-1-270.jpg" alt="фото Ігора Дем'яненка" />
+							</picture>
+
 							<div class="team__box">
 								<h3 class="team__subtitle">Ігор Дем'яненко</h3>
 								<p class="text team__prof">Product Designer</p>
@@ -178,13 +210,25 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__picture"
-								src="./images/img(1).jpg"
-								alt="Гарне фото Ольги Рєпіної"
-								width="270"
-								height="260"
-							/>
+							<picture>
+								<source
+									srcset="./images/team/person-2/person-2-270.jpg 1x, ./images/team/person-2/person-2-270@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/person-2/person-2-354.jpg 1x, ./images/team/person-2/person-2-354@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/person-2/person-2-450.jpg 1x, ./images/team/person-2/person-2-450@2x.jpg 2x"
+									type="image/jpeg"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/team/person-2/person-2-270.jpg" alt="фото Ольги Рєпіної" />
+							</picture>
+
 							<div class="team__box">
 								<h3 class="team__subtitle">Ольга Рєпіна</h3>
 								<p class="text team__prof">Frontend Developer</p>
@@ -221,13 +265,25 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__picture"
-								src="./images/img(2).jpg"
-								alt="Гарне фото Миколи Тарасова"
-								width="270"
-								height="260"
-							/>
+							<picture>
+								<source
+									srcset="./images/team/person-3/person-3-270.jpg 1x, ./images/team/person-3/person-3-270@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/person-3/person-3-354.jpg 1x, ./images/team/person-3/person-3-354@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/person-3/person-3-450.jpg 1x, ./images/team/person-3/person-3-450@2x.jpg 2x"
+									type="image/jpeg"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/team/person-3/person-3-270.jpg" alt="фото Миколи Тарасова" />
+							</picture>
+
 							<div class="team__box">
 								<h3 class="team__subtitle">Микола Тарасов</h3>
 								<p class="text team__prof">Marketing</p>
@@ -264,13 +320,25 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__picture"
-								src="./images/img(3).jpg"
-								alt="Гарне фото Михайла Єрмакова"
-								width="270"
-								height="260"
-							/>
+							<picture>
+								<source
+									srcset="./images/team/person-4/person-4-270.jpg 1x, ./images/team/person-4/person-4-270@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/person-4/person-4-354.jpg 1x, ./images/team/person-4/person-4-354@2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/person-4/person-4-450.jpg 1x, ./images/team/person-4/person-4-450@2x.jpg 2x"
+									type="image/jpeg"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/team/person-4/person-4-270.jpg" alt="фото Михайла Єрмакова" />
+							</picture>
+
 							<div class="team__box">
 								<h3 class="team__subtitle">Михайло Єрмаков</h3>
 								<p class="text team__prof">UI Designer</p>
@@ -356,7 +424,7 @@
 		<footer class="footer">
 			<div class="container footer-container">
 				<div class="address-wrap">
-					<a class="logo footer-logo" href=""><span class="accent">Web</span>Studio</a>
+					<a class="logo-footer footer-logo" href=""><span class="accent">Web</span>Studio</a>
 					<address>
 						<ul class="footer__list">
 							<li class="footer__item">
@@ -471,6 +539,46 @@
 				</form>
 			</div>
 		</div>
+		<button data-menu-button aria-expanded="false" class="header__menu" type="button">
+			<svg class="mobile__menu-btn" width="50" height="50">
+				<use class="open" href="./images/icons.svg#menu-open"></use>
+				<use class="close" href="./images/icons.svg#menu-close"></use>
+			</svg>
+		</button>
+		<div data-menu class="menu">
+			<div class="menu__container">
+				<nav class="menu__nav">
+					<ul class="list menu__list">
+						<li class="list-item-menu"><a class="link current menu__nav__link" href="./index.html">Студія</a></li>
+						<li class="list-item-menu"><a class="link menu__nav__link" href="./portfolio.html">Портфоліо</a></li>
+						<li class="list-item-menu"><a class="link menu__nav__link" href=""> Контакти</a></li>
+					</ul>
+				</nav>
+				<ul class="list menu-contact-list">
+					<li class="list-item-tel-menu">
+						<a class="link menu-contact" href="tel:+380961111111"> +38 096 111 11 11 </a>
+					</li>
+					<li class="list-item-mail-menu">
+						<a class="link menu-header-contact" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+					</li>
+				</ul>
+				<ul class="list menu__socials">
+					<li class="menu__link-thumb">
+						<a href="" class="link menu__link-socials">Instagram</a>
+					</li>
+					<li class="header__link-thumb">
+						<a href="" class="link menu__link-socials">Twitter</a>
+					</li>
+					<li class="header__link-thumb">
+						<a href="" class="link menu__link-socials">Facebook</a>
+					</li>
+					<li class="header__link-thumb">
+						<a href="" class="link menu__link-socials">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
