@@ -54,6 +54,7 @@
   margin-top: auto;
     margin-bottom: 64px;
     padding-top: 50px;
+    gap: 32px;
    
 }
 .list-item-tel-menu{
@@ -64,13 +65,15 @@
 }
 .menu__nav{
     display: flex;
-    text-align: center;
+    
+    margin-bottom: 302px;
+    gap: 32px;
 }
 .menu__socials{
     margin-top: 64px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 .menu__link-socials{
     padding: 0 10px;
@@ -78,4 +81,14 @@
 }
 .header__link-thumb:not(:first-child) {
     border-left: 1px solid rgba(33,33,33,.2);
+}
+.list-item-menu{
+    padding-bottom: 32px;
+}
+.menu__nav__link:hover,
+.menu__nav__link:focus{
+    color: var(--accent-txt-cl);
+}
+.menu-contact{
+    color: var(--accent-txt-cl);
 }

@@ -143,6 +143,7 @@ ul {
 }
 
 .contact-list {
+  gap: 30px;
   display: flex;
 }
 @media screen and (max-width: 767px) {
@@ -206,7 +207,7 @@ ul {
 @media screen and (max-width: 1199px) {
   .header-contact {
     padding: 0;
-    margin-left: 96px;
+    margin-left: auto;
   }
 }
 
@@ -222,10 +223,6 @@ ul {
 .list-item-tel .link,
 .list-item-mail .link {
   color: var(--secondary-tx-cl);
-}
-
-.list-item-mail {
-  margin-right: 50px;
 }
 
 .header__menu {
@@ -247,6 +244,9 @@ ul {
   opacity: 0;
 }
 
+.mobile-logo {
+  padding-bottom: 0;
+}
 @media screen and (min-width: 767px) {
   .mobile-logo {
     display: none;
@@ -315,6 +315,7 @@ ul {
   margin-top: auto;
   margin-bottom: 64px;
   padding-top: 50px;
+  gap: 32px;
 }
 
 .list-item-tel-menu {
@@ -337,14 +338,15 @@ ul {
 
 .menu__nav {
   display: flex;
-  text-align: center;
+  margin-bottom: 302px;
+  gap: 32px;
 }
 
 .menu__socials {
   margin-top: 64px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .menu__link-socials {
@@ -359,6 +361,19 @@ ul {
 
 .header__link-thumb:not(:first-child) {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.list-item-menu {
+  padding-bottom: 32px;
+}
+
+.menu__nav__link:hover,
+.menu__nav__link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.menu-contact {
+  color: var(--accent-txt-cl);
 }
 
 .icon-wrap {
@@ -504,7 +519,10 @@ ul {
   background: var(--background-page);
   padding-bottom: 200px;
   padding-top: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgi-hero/bgi-hero-768@2x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgi-hero/bgi-hero-480.jpg);
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -512,12 +530,42 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgi-hero/bgi-hero-480@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgi-hero/bgi-hero-768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgi-hero/bgi-hero-768@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgi-hero/bgi-hero-1600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgi-hero/bgi-hero-1600@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 
 .hero__btn {
   width: 216px;
   min-height: 50px;
   padding: 10px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   margin-left: auto;
   margin-right: auto;
   border-radius: var(--btn-radius);
@@ -544,6 +592,18 @@ ul {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .hero__title {
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    color: var(--white-tx-cl);
+    text-align: center;
+    width: 360px;
+  }
 }
 
 .backdrop {
